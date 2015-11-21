@@ -1,0 +1,89 @@
+<LinearLayout
+
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    >
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+        android:layout_height="0dp" android:id="@+id/map" tools:context=".MapsActivity"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_weight="0.09"
+        />
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/horizontalScrollView">
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="77dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="false"
+        android:longClickable="true"
+        >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="86dp"
+            android:layout_height="match_parent"
+            android:id="@+id/linearLayout">
+
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="86dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/linearLayout"
+            android:layout_toEndOf="@+id/linearLayout"
+            android:id="@+id/linearLayout2">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="86dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/linearLayout2"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/linearLayout3">
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="86dp"
+            android:layout_height="match_parent"
+            android:id="@+id/linearLayout4"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/linearLayout3"
+            android:layout_toEndOf="@+id/linearLayout3">
+
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="86dp"
+            android:layout_height="match_parent"
+            android:id="@+id/linearLayout5"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/linearLayout4"
+            android:layout_toEndOf="@+id/linearLayout4">
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    </HorizontalScrollView>
+</LinearLayout>
+
+
